@@ -25,13 +25,13 @@ public class Utilities extends BasePage{
 		
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, prop.getProperty("platformVersion"));
 		
-//		dc.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+"\\src\\main\\resources\\Apps\\base.apk");
+		dc.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+"\\src\\main\\resources\\Apps\\base.apk");
 		
-		dc.setCapability("appPackage", "com.avegen.together");
-		
-		dc.setCapability("appActivity", "com.avegen.together.MainActivity");
-		
-		dc.setCapability("appWaitPackage", "com.avegen.together");
+//		dc.setCapability("appPackage", "com.avegen.together");
+//		
+//		dc.setCapability("appActivity", "com.avegen.together.MainActivity");
+//		
+//		dc.setCapability("appWaitPackage", "com.avegen.together");
 		
 		return dc;
 	}

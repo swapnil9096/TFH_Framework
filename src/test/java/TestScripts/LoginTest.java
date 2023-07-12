@@ -36,6 +36,6 @@ public class LoginTest extends BasePage{
 		launch.getLogin("Swapnil");
 		String actualResult = home.getProfileName();
 		
-		Assert.assertEquals(actualResult, "Hello, Swapnil!","Test Case Failed...!!!");
+		Assert.assertEquals(actualResult, "Hello, Mommy!","Test Case Failed...!!!");
 	}
 }
