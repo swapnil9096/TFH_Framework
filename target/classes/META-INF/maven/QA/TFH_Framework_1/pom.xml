@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>QA</groupId>
-  <artifactId>TFH_Framework_1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>
-  
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>QA</groupId>
+	<artifactId>TFH_Framework_1</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -53,10 +53,10 @@
 			<optional>true</optional>
 		</dependency>
 
-  
-  </dependencies>
-  
-  <build>
+
+	</dependencies>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -65,7 +65,7 @@
 				<configuration>
 					<testFailureIgnore>false</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>Logintestng.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -74,8 +74,8 @@
 
 
 	<profiles>
-	
-	<profile>
+
+		<profile>
 			<id>1</id>
 			<build>
 				<plugins>
@@ -85,14 +85,14 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>Logintestng.xml</suiteXmlFile>
+								<suiteXmlFile>testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
-	
+
 	</profiles>
-  
+
 </project>
