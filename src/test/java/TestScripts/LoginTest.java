@@ -33,7 +33,7 @@ public class LoginTest extends BasePage{
 	public void verifyLogin() throws InterruptedException
 	{
 		
-		launch.getLogin("Swapnil");
+		launch.getLogin();
 		String actualResult = home.getProfileName();
 		
 		Assert.assertEquals(actualResult, "Hello, Mommy!","Test Case Failed...!!!");

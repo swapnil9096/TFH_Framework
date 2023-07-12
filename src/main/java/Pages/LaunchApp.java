@@ -81,7 +81,7 @@ public class LaunchApp extends BasePage {
 	}
 	
 	
-	public HomePage getLogin(String name) throws InterruptedException
+	public HomePage getLogin() throws InterruptedException
 	{
 		clickOnlan();
 		clickOnNextBtn();
